@@ -6,7 +6,9 @@ import { CATEGORIES } from "../data/dummy-data.js";
 const CategoriesScreen = ({ navigation }) => {
   function renderCategoryItem(itemData) {
     function navigate() {
-      navigation.navigate("overview");
+      navigation.navigate("overview", {
+        categoryId: itemData.item.id,
+      });
     }
     return (
       <CategoryTile
