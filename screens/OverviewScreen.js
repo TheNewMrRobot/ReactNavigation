@@ -13,6 +13,7 @@ const OverviewScreen = ({ navigation }) => {
 
   function renderMealItem(itemData) {
     const mealItemData = {
+      id: itemData.item.id,
       title: itemData.item.title,
       imageUrl: itemData.item.imageUrl,
       duration: itemData.item.duration,
